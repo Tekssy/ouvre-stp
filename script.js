@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         clickCounter++;
 
         // Vérifie si le nombre de clics atteint 10
-        if (clickCounter === 20) {
+        if (clickCounter === 10) {
             // Ajoutez ici le code que vous souhaitez exécuter après 10 clics sur "Non"
             question.innerHTML = "Comment ça non ?";
             gif.src = "https://media1.giphy.com/media/nwvbh2OTDp8p9mOM4s/giphy.gif?cid=ecf05e47brvu7ljojxn4p7vpcmlxj0vi6gwpn25o4wvjjlnr&ep=v1_gifs_search&rid=giphy.gif&ct=g";
@@ -47,9 +47,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-  const randomX = Math.floor(Math.random() * maxX);
-  const randomY = Math.floor(Math.random() * maxY);
-
-  noBtn.style.left = randomX + "px";
-  noBtn.style.top = randomY + "px";
-});
