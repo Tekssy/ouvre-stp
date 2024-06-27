@@ -20,16 +20,15 @@ body {
 }
 
 .light-mode {
-    background-color: #ffcccc; /* Couleur de fond rose ou autre couleur initiale */
-    color: #000; /* Couleur du texte en mode clair */
-    transition: all 3s ease; /* Transition douce pour une animation agréable */
+    background-color: #ffcccc; 
+    color: #000; 
+    transition: all 3s ease; 
 }
 
 .dark-mode {
-    background-color: #333; /* Couleur de fond sombre en mode sombre */
-    color: #fff; /* Couleur du texte en mode sombre */
-    transition: all 3s ease; /* Transition douce pour une animation agréable */
-}
+    background-color: #333;
+    color: #fff; 
+    transition: all 3s ease;
 
 .image-javascript {
     position: fixed;
@@ -38,8 +37,7 @@ body {
     width: 100vw;
     height: 100vh;
     object-fit: contain;
-    z-index: 9999; /* Assure que l'image est au-dessus de tout */
-    /* Ajoutez d'autres styles selon vos préférences */
+    z-index: 9999; 
 }
 
 
