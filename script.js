@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (clickCounter === 10) {
             question.innerHTML = "Comment ça non ?";
-            gif.src = "https://media1.giphy.com/media/nwvbh2OTDp8p9mOM4s/giphy.gif?cid=ecf05e47brvu7ljojxn4p7vpcmlxj0vi6gwpn25o4wvjjlnr&ep=v1_gifs_search&rid=giphy.gif&ct=g";
+            gif.src = "https://media.tenor.com/kZsgPaYCW7oAAAAd/rizz-family-guy.gif";
             noBtn.disabled = true;
         }
 
