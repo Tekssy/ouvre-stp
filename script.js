@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const noBtn = document.querySelector(".no-btn");
 
     yesBtn.addEventListener("click", () => {
-        question.innerHTML = "Youpiii <33";
+        question.innerHTML = "Youpi, à demain <33";
         gif.src = "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif";
     });
 
@@ -34,16 +34,19 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
 if (clickCounter === 15) {
+    // Appliquer la classe dark-mode à l'ensemble du corps
     document.body.classList.add("dark-mode");
 
-    gif.style.display = "none"; 
+    // Cacher ou supprimer le gif précédent
+    gif.style.display = "none"; // Ou utilisez gif.parentNode.removeChild(gif);
 
+    // Ajouter l'image
     var imagejavascript = document.createElement("img");
     imagejavascript.src = "https://i.pinimg.com/564x/b8/e1/a9/b8e1a993358f7e5405d6db18d57b8969.jpg";
     imagejavascript.classList.add("image-javascript");
     document.body.appendChild(imagejavascript);
 
-
+    // Cacher les autres éléments si nécessaire
     wrapper.style.display = "none";
     yesBtn.style.display = "none";
     noBtn.style.display = "none";
@@ -53,7 +56,11 @@ if (clickCounter === 15) {
 
 
 
+
+
     });
 });
+
+
 
 
