@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const noBtn = document.querySelector(".no-btn");
 
     yesBtn.addEventListener("click", () => {
-        question.innerHTML = "Youpi, à demain <33";
+        question.innerHTML = "Youpiii <33";
         gif.src = "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif";
     });
 
