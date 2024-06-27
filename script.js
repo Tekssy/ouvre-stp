@@ -22,28 +22,38 @@ document.addEventListener("DOMContentLoaded", function () {
         noBtn.style.top = randomY + "px";
     });
 
-    // Initialisez le compteur de clics
     var clickCounter = 0;
 
-    // Ajoutez un gestionnaire d'événements au bouton "Non"
     noBtn.addEventListener('mouseover', function () {
-        // Incrémente le compteur de clics
         clickCounter++;
 
-        // Vérifie si le nombre de clics atteint 10
         if (clickCounter === 10) {
-            // Ajoutez ici le code que vous souhaitez exécuter après 10 clics sur "Non"
             question.innerHTML = "Comment ça non ?";
             gif.src = "https://media1.giphy.com/media/nwvbh2OTDp8p9mOM4s/giphy.gif?cid=ecf05e47brvu7ljojxn4p7vpcmlxj0vi6gwpn25o4wvjjlnr&ep=v1_gifs_search&rid=giphy.gif&ct=g";
-
-            // Désactive le bouton "Non"
             noBtn.disabled = true;
-
-            // Réinitialise le compteur pour permettre de détecter à nouveau 10 clics
-            clickCounter = 0;
-        } else {
-            // Si moins de 10 clics, vous pouvez ajouter un autre traitement ou laisser vide
         }
+
+if (clickCounter === 15) {
+    document.body.classList.add("dark-mode");
+
+    gif.style.display = "none"; 
+
+    var imagejavascript = document.createElement("img");
+    imagejavascript.src = "https://i.pinimg.com/564x/b8/e1/a9/b8e1a993358f7e5405d6db18d57b8969.jpg";
+    imagejavascript.classList.add("image-javascript");
+    document.body.appendChild(imagejavascript);
+
+
+    wrapper.style.display = "none";
+    yesBtn.style.display = "none";
+    noBtn.style.display = "none";
+
+    clickCounter = 0;
+}
+
+
+
     });
 });
+
 
