@@ -19,6 +19,31 @@ body {
     width: 100%;
 }
 
+.light-mode {
+    background-color: #ffcccc; /* Couleur de fond rose ou autre couleur initiale */
+    color: #000; /* Couleur du texte en mode clair */
+    transition: all 3s ease; /* Transition douce pour une animation agréable */
+}
+
+.dark-mode {
+    background-color: #333; /* Couleur de fond sombre en mode sombre */
+    color: #fff; /* Couleur du texte en mode sombre */
+    transition: all 3s ease; /* Transition douce pour une animation agréable */
+}
+
+.image-javascript {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    z-index: 9999; /* Assure que l'image est au-dessus de tout */
+    /* Ajoutez d'autres styles selon vos préférences */
+}
+
+
+
 h2 {
     text-align: center;
     font-size: 1.5em;
@@ -53,4 +78,14 @@ button:nth-child(2) {
     margin-right: -200px;
     background: white;
     color: #e94d58;
+}
+
+question.innerHTML {
+    position: absolute;
+    width: 150px;
+    height: inherit;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 30px;
+    outline: none;
 }
